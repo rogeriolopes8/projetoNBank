@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.9.7 on win32)" generated="20211011 11:37:05.540" rpa="false" schemaversion="2">
+<suite id="s1" name="Projeto" source="C:\GravidadeZERO\ProjetoGravidadeZero\tests\projeto.robot">
+<test id="s1-t1" name="Cenario saldo">
+<kw name="Start Session" library="base" type="SETUP">
+<kw name="New Browser" library="Browser">
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<arg>slowMo=00:00:00</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<msg timestamp="20211011 11:37:06.863" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\GravidadeZERO\\ProjetoGravidadeZero\\logs\\browser\\traces\\21e66bb7-014e-43f6-9cc0-176251a9c86a"}</msg>
+<msg timestamp="20211011 11:37:07.303" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\GravidadeZERO\\ProjetoGravidadeZero\\logs\\browser\\traces\\21e66bb7-014e-43f6-9cc0-176251a9c86a"}</msg>
+<status status="PASS" starttime="20211011 11:37:06.862" endtime="20211011 11:37:07.304"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>${BASE_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page. A Page is the Playwright equivalent to a tab.
+See `Browser, Context and Page` for more information about Page concept.
+Returns a stable identifier for the created page.</doc>
+<msg timestamp="20211011 11:37:08.438" level="INFO">Successfully initialized new page object and opened url: https://nbank.vercel.app/</msg>
+<msg timestamp="20211011 11:37:08.438" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20211011 11:37:07.304" endtime="20211011 11:37:08.438"/>
+</kw>
+<status status="PASS" starttime="20211011 11:37:06.862" endtime="20211011 11:37:08.439"/>
+</kw>
+<kw name="Verificar titulo" library="actions">
+<kw name="Get Title" library="Browser">
+<arg>equal</arg>
+<arg>nBank by QAninja</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" starttime="20211011 11:37:08.442" endtime="20211011 11:37:08.456"/>
+</kw>
+<status status="PASS" starttime="20211011 11:37:08.440" endtime="20211011 11:37:08.456"/>
+</kw>
+<kw name="Verificar saldo inicial" library="actions">
+<kw name="Wait For Elements State" library="Browser">
+<arg>css=.navbar-item &gt;&gt; text="Olá Papito, seu saldo é R$ 1000"</arg>
+<arg>visible</arg>
+<arg>5</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20211011 11:37:08.504" level="INFO">Wait for Element with selector: css=.navbar-item &gt;&gt; text="Olá Papito, seu saldo é R$ 1000"</msg>
+<status status="PASS" starttime="20211011 11:37:08.458" endtime="20211011 11:37:08.505"/>
+</kw>
+<status status="PASS" starttime="20211011 11:37:08.457" endtime="20211011 11:37:08.505"/>
+</kw>
+<kw name="End Session" library="base" type="TEARDOWN">
+<kw name="Take Screenshot" library="Browser">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<msg timestamp="20211011 11:37:08.720" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211011 11:37:08.507" endtime="20211011 11:37:08.721"/>
+</kw>
+<status status="PASS" starttime="20211011 11:37:08.506" endtime="20211011 11:37:08.721"/>
+</kw>
+<status status="PASS" starttime="20211011 11:37:06.859" endtime="20211011 11:37:08.722"/>
+</test>
+<test id="s1-t2" name="Cenario fazer pix">
+<kw name="Start Session" library="base" type="SETUP">
+<kw name="New Browser" library="Browser">
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<arg>slowMo=00:00:00</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<msg timestamp="20211011 11:37:08.820" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\GravidadeZERO\\ProjetoGravidadeZero\\logs\\browser\\traces\\5182009d-d0bc-464c-99b4-0c0eb9053c41"}</msg>
+<msg timestamp="20211011 11:37:09.267" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\GravidadeZERO\\ProjetoGravidadeZero\\logs\\browser\\traces\\5182009d-d0bc-464c-99b4-0c0eb9053c41"}</msg>
+<status status="PASS" starttime="20211011 11:37:08.820" endtime="20211011 11:37:09.267"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>${BASE_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page. A Page is the Playwright equivalent to a tab.
+See `Browser, Context and Page` for more information about Page concept.
+Returns a stable identifier for the created page.</doc>
+<msg timestamp="20211011 11:37:10.338" level="INFO">Successfully initialized new page object and opened url: https://nbank.vercel.app/</msg>
+<msg timestamp="20211011 11:37:10.338" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20211011 11:37:09.268" endtime="20211011 11:37:10.338"/>
+</kw>
+<status status="PASS" starttime="20211011 11:37:08.819" endtime="20211011 11:37:10.338"/>
+</kw>
+<kw name="Pix Positivo" library="pix">
+<var>${pix}</var>
+<msg timestamp="20211011 11:37:10.340" level="INFO">${pix} = {'banco': 'Neon', 'chave': '02478427109', 'valor': '100', 'transacao': 'Envio de PIX', 'detalhes': 'Neon - PIX para 02478427109'}</msg>
+<status status="PASS" starttime="20211011 11:37:10.339" endtime="20211011 11:37:10.340"/>
+</kw>
+<kw name="Verificar titulo" library="actions">
+<kw name="Get Title" library="Browser">
+<arg>equal</arg>
+<arg>nBank by QAninja</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" starttime="20211011 11:37:10.341" endtime="20211011 11:37:10.347"/>
+</kw>
+<status status="PASS" starttime="20211011 11:37:10.340" endtime="20211011 11:37:10.347"/>
+</kw>
+<kw name="Verificar saldo inicial" library="actions">
+<kw name="Wait For Elements State" library="Browser">
+<arg>css=.navbar-item &gt;&gt; text="Olá Papito, seu saldo é R$ 1000"</arg>
+<arg>visible</arg>
+<arg>5</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20211011 11:37:10.397" level="INFO">Wait for Element with selector: css=.navbar-item &gt;&gt; text="Olá Papito, seu saldo é R$ 1000"</msg>
+<status status="PASS" starttime="20211011 11:37:10.348" endtime="20211011 11:37:10.397"/>
+</kw>
+<status status="PASS" starttime="20211011 11:37:10.348" endtime="20211011 11:37:10.397"/>
+</kw>
+<kw name="Go To Fazer PIX" library="actions">
+<kw name="Click" library="Browser">
+<arg>text=Fazer PIX</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20211011 11:37:10.398" endtime="20211011 11:37:10.570"/>
+</kw>
+<kw name="Wait For Elements State" library="Browser">
+<arg>css=button &gt;&gt; text=Enviar PIX</arg>
+<arg>visible</arg>
+<arg>5</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20211011 11:37:10.591" level="INFO">Wait for Element with selector: css=button &gt;&gt; text=Enviar PIX</msg>
+<status status="PASS" starttime="20211011 11:37:10.570" endtime="20211011 11:37:10.591"/>
+</kw>
+<status status="PASS" starttime="20211011 11:37:10.398" endtime="20211011 11:37:10.591"/>
+</kw>
+<kw name="Fill Pix Modal" library="actions">
+<arg>${pix}</arg>
+<kw name="Select Options By" library="Browser">
+<arg>css=.field select</arg>
+<arg>text</arg>
+<arg>${pix}[banco]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" starttime="20211011 11:37:10.593" endtime="20211011 11:37:10.630"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=chave-pix</arg>
+<arg>${pix}[chave]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20211011 11:37:10.630" level="INFO">Fills the text '02478427109' in the given field.</msg>
+<status status="PASS" starttime="20211011 11:37:10.630" endtime="20211011 11:37:10.677"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=valor</arg>
+<arg>${pix}[valor]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20211011 11:37:10.677" level="INFO">Fills the text '100' in the given field.</msg>
+<status status="PASS" starttime="20211011 11:37:10.677" endtime="20211011 11:37:10.710"/>
+</kw>
+<status status="PASS" starttime="20211011 11:37:10.592" endtime="20211011 11:37:10.710"/>
+</kw>
+<kw name="Enviar Pix Form" library="actions">
+<kw name="Click" library="Browser">
+<arg>css=button &gt;&gt; text=Enviar PIX</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20211011 11:37:10.711" endtime="20211011 11:37:10.844"/>
+</kw>
+<status status="PASS" starttime="20211011 11:37:10.710" endtime="20211011 11:37:10.844"/>
+</kw>
+<kw name="Verificar saldo atual" library="actions">
+<arg>Olá Papito, seu saldo é R$ 900</arg>
+<kw name="Set Variable" library="BuiltIn">
+<var>${element}</var>
+<arg>xpath=//a[contains(text(), 'saldo')]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20211011 11:37:10.846" level="INFO">${element} = xpath=//a[contains(text(), 'saldo')]</msg>
+<status status="PASS" starttime="20211011 11:37:10.846" endtime="20211011 11:37:10.846"/>
+</kw>
+<kw name="Wait For Elements State" library="Browser">
+<arg>${element}</arg>
+<arg>visible</arg>
+<arg>5</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20211011 11:37:10.865" level="INFO">Wait for Element with selector: xpath=//a[contains(text(), 'saldo')]</msg>
+<status status="PASS" starttime="20211011 11:37:10.846" endtime="20211011 11:37:10.865"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>${element}</arg>
+<arg>equal</arg>
+<arg>${expected_balance}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20211011 11:37:10.866" endtime="20211011 11:37:10.899"/>
+</kw>
+<status status="PASS" starttime="20211011 11:37:10.845" endtime="20211011 11:37:10.899"/>
+</kw>
+<kw name="Pix Should Be Visible" library="actions">
+<arg>${pix}</arg>
+<kw name="Set Variable" library="BuiltIn">
+<var>${element}</var>
+<arg>xpath=//td[contains(text(), "${pix}[transacao]")]/..</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20211011 11:37:10.901" level="INFO">${element} = xpath=//td[contains(text(), "Envio de PIX")]/..</msg>
+<status status="PASS" starttime="20211011 11:37:10.900" endtime="20211011 11:37:10.901"/>
+</kw>
+<kw name="Wait For Elements State" library="Browser">
+<arg>${element}</arg>
+<arg>visible</arg>
+<arg>5</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20211011 11:37:10.916" level="INFO">Wait for Element with selector: xpath=//td[contains(text(), "Envio de PIX")]/..</msg>
+<status status="PASS" starttime="20211011 11:37:10.901" endtime="20211011 11:37:10.916"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>${element}</arg>
+<arg>contains</arg>
+<arg>${pix}[detalhes]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20211011 11:37:10.917" endtime="20211011 11:37:10.940"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>${element}</arg>
+<arg>contains</arg>
+<arg>${pix}[valor]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20211011 11:37:10.940" endtime="20211011 11:37:10.961"/>
+</kw>
+<status status="PASS" starttime="20211011 11:37:10.900" endtime="20211011 11:37:10.962"/>
+</kw>
+<kw name="End Session" library="base" type="TEARDOWN">
+<kw name="Take Screenshot" library="Browser">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<msg timestamp="20211011 11:37:11.162" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-2.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211011 11:37:10.963" endtime="20211011 11:37:11.162"/>
+</kw>
+<status status="PASS" starttime="20211011 11:37:10.963" endtime="20211011 11:37:11.162"/>
+</kw>
+<status status="PASS" starttime="20211011 11:37:08.817" endtime="20211011 11:37:11.162"/>
+</test>
+<test id="s1-t3" name="Cenario PIX com valor zero">
+<kw name="Start Session" library="base" type="SETUP">
+<kw name="New Browser" library="Browser">
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<arg>slowMo=00:00:00</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<msg timestamp="20211011 11:37:11.252" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\GravidadeZERO\\ProjetoGravidadeZero\\logs\\browser\\traces\\e454461a-66cf-401c-b954-05a0d98d1a01"}</msg>
+<msg timestamp="20211011 11:37:11.695" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\GravidadeZERO\\ProjetoGravidadeZero\\logs\\browser\\traces\\e454461a-66cf-401c-b954-05a0d98d1a01"}</msg>
+<status status="PASS" starttime="20211011 11:37:11.251" endtime="20211011 11:37:11.696"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>${BASE_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page. A Page is the Playwright equivalent to a tab.
+See `Browser, Context and Page` for more information about Page concept.
+Returns a stable identifier for the created page.</doc>
+<msg timestamp="20211011 11:37:12.701" level="INFO">Successfully initialized new page object and opened url: https://nbank.vercel.app/</msg>
+<msg timestamp="20211011 11:37:12.701" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20211011 11:37:11.696" endtime="20211011 11:37:12.702"/>
+</kw>
+<status status="PASS" starttime="20211011 11:37:11.251" endtime="20211011 11:37:12.702"/>
+</kw>
+<kw name="Pix Zero" library="pix">
+<var>${pix}</var>
+<msg timestamp="20211011 11:37:12.704" level="INFO">${pix} = {'banco': 'Nubank', 'chave': '02478427109', 'valor': '0'}</msg>
+<status status="PASS" starttime="20211011 11:37:12.703" endtime="20211011 11:37:12.705"/>
+</kw>
+<kw name="Verificar titulo" library="actions">
+<kw name="Get Title" library="Browser">
+<arg>equal</arg>
+<arg>nBank by QAninja</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" starttime="20211011 11:37:12.707" endtime="20211011 11:37:12.718"/>
+</kw>
+<status status="PASS" starttime="20211011 11:37:12.706" endtime="20211011 11:37:12.718"/>
+</kw>
+<kw name="Verificar saldo inicial" library="actions">
+<kw name="Wait For Elements State" library="Browser">
+<arg>css=.navbar-item &gt;&gt; text="Olá Papito, seu saldo é R$ 1000"</arg>
+<arg>visible</arg>
+<arg>5</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20211011 11:37:12.758" level="INFO">Wait for Element with selector: css=.navbar-item &gt;&gt; text="Olá Papito, seu saldo é R$ 1000"</msg>
+<status status="PASS" starttime="20211011 11:37:12.719" endtime="20211011 11:37:12.759"/>
+</kw>
+<status status="PASS" starttime="20211011 11:37:12.719" endtime="20211011 11:37:12.759"/>
+</kw>
+<kw name="Go To Fazer PIX" library="actions">
+<kw name="Click" library="Browser">
+<arg>text=Fazer PIX</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20211011 11:37:12.760" endtime="20211011 11:37:12.896"/>
+</kw>
+<kw name="Wait For Elements State" library="Browser">
+<arg>css=button &gt;&gt; text=Enviar PIX</arg>
+<arg>visible</arg>
+<arg>5</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20211011 11:37:12.915" level="INFO">Wait for Element with selector: css=button &gt;&gt; text=Enviar PIX</msg>
+<status status="PASS" starttime="20211011 11:37:12.896" endtime="20211011 11:37:12.916"/>
+</kw>
+<status status="PASS" starttime="20211011 11:37:12.760" endtime="20211011 11:37:12.916"/>
+</kw>
+<kw name="Fill Pix Modal" library="actions">
+<arg>${pix}</arg>
+<kw name="Select Options By" library="Browser">
+<arg>css=.field select</arg>
+<arg>text</arg>
+<arg>${pix}[banco]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" starttime="20211011 11:37:12.918" endtime="20211011 11:37:12.958"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=chave-pix</arg>
+<arg>${pix}[chave]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20211011 11:37:12.959" level="INFO">Fills the text '02478427109' in the given field.</msg>
+<status status="PASS" starttime="20211011 11:37:12.958" endtime="20211011 11:37:13.001"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=valor</arg>
+<arg>${pix}[valor]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20211011 11:37:13.002" level="INFO">Fills the text '0' in the given field.</msg>
+<status status="PASS" starttime="20211011 11:37:13.001" endtime="20211011 11:37:13.046"/>
+</kw>
+<status status="PASS" starttime="20211011 11:37:12.917" endtime="20211011 11:37:13.046"/>
+</kw>
+<kw name="Enviar Pix Form" library="actions">
+<kw name="Click" library="Browser">
+<arg>css=button &gt;&gt; text=Enviar PIX</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20211011 11:37:13.048" endtime="20211011 11:37:13.190"/>
+</kw>
+<status status="PASS" starttime="20211011 11:37:13.047" endtime="20211011 11:37:13.190"/>
+</kw>
+<kw name="Mensagem alerta" library="actions">
+<arg>Oops. Transferir ZERO é osso hein...</arg>
+<kw name="Set Variable" library="BuiltIn">
+<var>${element}</var>
+<arg>css=.media-content</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20211011 11:37:13.192" level="INFO">${element} = css=.media-content</msg>
+<status status="PASS" starttime="20211011 11:37:13.192" endtime="20211011 11:37:13.192"/>
+</kw>
+<kw name="Wait For Elements State" library="Browser">
+<arg>${element}</arg>
+<arg>visible</arg>
+<arg>5</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20211011 11:37:13.210" level="INFO">Wait for Element with selector: css=.media-content</msg>
+<status status="PASS" starttime="20211011 11:37:13.192" endtime="20211011 11:37:13.210"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>${element}</arg>
+<arg>equal</arg>
+<arg>${message}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20211011 11:37:13.211" endtime="20211011 11:37:13.232"/>
+</kw>
+<status status="PASS" starttime="20211011 11:37:13.191" endtime="20211011 11:37:13.232"/>
+</kw>
+<kw name="End Session" library="base" type="TEARDOWN">
+<kw name="Take Screenshot" library="Browser">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<msg timestamp="20211011 11:37:13.451" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-3.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211011 11:37:13.234" endtime="20211011 11:37:13.451"/>
+</kw>
+<status status="PASS" starttime="20211011 11:37:13.233" endtime="20211011 11:37:13.451"/>
+</kw>
+<status status="PASS" starttime="20211011 11:37:11.248" endtime="20211011 11:37:13.452"/>
+</test>
+<test id="s1-t4" name="Cenario PIX com valor negativo">
+<kw name="Start Session" library="base" type="SETUP">
+<kw name="New Browser" library="Browser">
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<arg>slowMo=00:00:00</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<msg timestamp="20211011 11:37:13.531" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\GravidadeZERO\\ProjetoGravidadeZero\\logs\\browser\\traces\\b5f9aa60-f483-4323-b072-6060b3505d34"}</msg>
+<msg timestamp="20211011 11:37:13.953" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\GravidadeZERO\\ProjetoGravidadeZero\\logs\\browser\\traces\\b5f9aa60-f483-4323-b072-6060b3505d34"}</msg>
+<status status="PASS" starttime="20211011 11:37:13.530" endtime="20211011 11:37:13.953"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>${BASE_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page. A Page is the Playwright equivalent to a tab.
+See `Browser, Context and Page` for more information about Page concept.
+Returns a stable identifier for the created page.</doc>
+<msg timestamp="20211011 11:37:15.044" level="INFO">Successfully initialized new page object and opened url: https://nbank.vercel.app/</msg>
+<msg timestamp="20211011 11:37:15.044" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20211011 11:37:13.958" endtime="20211011 11:37:15.045"/>
+</kw>
+<status status="PASS" starttime="20211011 11:37:13.530" endtime="20211011 11:37:15.045"/>
+</kw>
+<kw name="Pix Negativo" library="pix">
+<var>${pix}</var>
+<msg timestamp="20211011 11:37:15.047" level="INFO">${pix} = {'banco': 'Next', 'chave': '02478427109', 'valor': '-1'}</msg>
+<status status="PASS" starttime="20211011 11:37:15.047" endtime="20211011 11:37:15.048"/>
+</kw>
+<kw name="Verificar titulo" library="actions">
+<kw name="Get Title" library="Browser">
+<arg>equal</arg>
+<arg>nBank by QAninja</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" starttime="20211011 11:37:15.049" endtime="20211011 11:37:15.065"/>
+</kw>
+<status status="PASS" starttime="20211011 11:37:15.048" endtime="20211011 11:37:15.065"/>
+</kw>
+<kw name="Verificar saldo inicial" library="actions">
+<kw name="Wait For Elements State" library="Browser">
+<arg>css=.navbar-item &gt;&gt; text="Olá Papito, seu saldo é R$ 1000"</arg>
+<arg>visible</arg>
+<arg>5</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20211011 11:37:15.106" level="INFO">Wait for Element with selector: css=.navbar-item &gt;&gt; text="Olá Papito, seu saldo é R$ 1000"</msg>
+<status status="PASS" starttime="20211011 11:37:15.066" endtime="20211011 11:37:15.106"/>
+</kw>
+<status status="PASS" starttime="20211011 11:37:15.065" endtime="20211011 11:37:15.107"/>
+</kw>
+<kw name="Go To Fazer PIX" library="actions">
+<kw name="Click" library="Browser">
+<arg>text=Fazer PIX</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20211011 11:37:15.108" endtime="20211011 11:37:15.268"/>
+</kw>
+<kw name="Wait For Elements State" library="Browser">
+<arg>css=button &gt;&gt; text=Enviar PIX</arg>
+<arg>visible</arg>
+<arg>5</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20211011 11:37:15.286" level="INFO">Wait for Element with selector: css=button &gt;&gt; text=Enviar PIX</msg>
+<status status="PASS" starttime="20211011 11:37:15.269" endtime="20211011 11:37:15.286"/>
+</kw>
+<status status="PASS" starttime="20211011 11:37:15.107" endtime="20211011 11:37:15.287"/>
+</kw>
+<kw name="Fill Pix Modal" library="actions">
+<arg>${pix}</arg>
+<kw name="Select Options By" library="Browser">
+<arg>css=.field select</arg>
+<arg>text</arg>
+<arg>${pix}[banco]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" starttime="20211011 11:37:15.289" endtime="20211011 11:37:15.329"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=chave-pix</arg>
+<arg>${pix}[chave]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20211011 11:37:15.329" level="INFO">Fills the text '02478427109' in the given field.</msg>
+<status status="PASS" starttime="20211011 11:37:15.329" endtime="20211011 11:37:15.379"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=valor</arg>
+<arg>${pix}[valor]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20211011 11:37:15.379" level="INFO">Fills the text '-1' in the given field.</msg>
+<status status="PASS" starttime="20211011 11:37:15.379" endtime="20211011 11:37:15.419"/>
+</kw>
+<status status="PASS" starttime="20211011 11:37:15.287" endtime="20211011 11:37:15.419"/>
+</kw>
+<kw name="Enviar Pix Form" library="actions">
+<kw name="Click" library="Browser">
+<arg>css=button &gt;&gt; text=Enviar PIX</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20211011 11:37:15.420" endtime="20211011 11:37:15.561"/>
+</kw>
+<status status="PASS" starttime="20211011 11:37:15.419" endtime="20211011 11:37:15.562"/>
+</kw>
+<kw name="Mensagem alerta" library="actions">
+<arg>Oops. Valor para PIX incorreto...</arg>
+<kw name="Set Variable" library="BuiltIn">
+<var>${element}</var>
+<arg>css=.media-content</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20211011 11:37:15.564" level="INFO">${element} = css=.media-content</msg>
+<status status="PASS" starttime="20211011 11:37:15.563" endtime="20211011 11:37:15.564"/>
+</kw>
+<kw name="Wait For Elements State" library="Browser">
+<arg>${element}</arg>
+<arg>visible</arg>
+<arg>5</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20211011 11:37:15.590" level="INFO">Wait for Element with selector: css=.media-content</msg>
+<status status="PASS" starttime="20211011 11:37:15.564" endtime="20211011 11:37:15.590"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>${element}</arg>
+<arg>equal</arg>
+<arg>${message}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20211011 11:37:16.845" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20211011 11:37:16.848" level="FAIL">Text 'Oops. Transferir ZERO é osso hein...' (str) should be 'Oops. Valor para PIX incorreto...' (str)</msg>
+<status status="FAIL" starttime="20211011 11:37:15.590" endtime="20211011 11:37:16.848"/>
+</kw>
+<status status="FAIL" starttime="20211011 11:37:15.563" endtime="20211011 11:37:16.849"/>
+</kw>
+<kw name="End Session" library="base" type="TEARDOWN">
+<kw name="Take Screenshot" library="Browser">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<msg timestamp="20211011 11:37:16.997" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-4.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211011 11:37:16.850" endtime="20211011 11:37:16.997"/>
+</kw>
+<status status="PASS" starttime="20211011 11:37:16.850" endtime="20211011 11:37:16.997"/>
+</kw>
+<status status="FAIL" starttime="20211011 11:37:13.526" endtime="20211011 11:37:16.998">Text 'Oops. Transferir ZERO é osso hein...' (str) should be 'Oops. Valor para PIX incorreto...' (str)</status>
+</test>
+<doc>Suite de testes Projeto final Starter</doc>
+<status status="FAIL" starttime="20211011 11:37:05.543" endtime="20211011 11:37:17.072"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="1" skip="0" id="s1" name="Projeto">Projeto</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

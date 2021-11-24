@@ -1,0 +1,135 @@
+{"level":30,"time":"2021-10-11T14:37:06.346Z","pid":3580,"hostname":"RogerioLopes","msg":"Listening on 49317"}
+{"level":30,"time":"2021-10-11T14:37:07.307Z","pid":3580,"hostname":"RogerioLopes","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-10-11T14:37:07.328Z","pid":3580,"hostname":"RogerioLopes","msg":"Changed active context"}
+{"level":30,"time":"2021-10-11T14:37:07.552Z","pid":3580,"hostname":"RogerioLopes","msg":"Video path: undefined"}
+{"level":30,"time":"2021-10-11T14:37:07.552Z","pid":3580,"hostname":"RogerioLopes","msg":"Changed active page"}
+{"level":30,"time":"2021-10-11T14:37:08.464Z","pid":3580,"hostname":"RogerioLopes","msg":"Page|Frame|Element resolved elementSelector: css=.navbar-item >> text=\"Olá Papito, seu saldo é R$ 1000\""}
+{"level":30,"time":"2021-10-11T14:37:08.728Z","pid":3580,"hostname":"RogerioLopes","msg":"Changed active context"}
+{"level":30,"time":"2021-10-11T14:37:08.728Z","pid":3580,"hostname":"RogerioLopes","msg":"Changing current active page"}
+{"level":30,"time":"2021-10-11T14:37:08.729Z","pid":3580,"hostname":"RogerioLopes","msg":"Changed active page"}
+{"level":30,"time":"2021-10-11T14:37:08.745Z","pid":3580,"hostname":"RogerioLopes","msg":"Changed active context"}
+{"level":30,"time":"2021-10-11T14:37:08.745Z","pid":3580,"hostname":"RogerioLopes","msg":"Changing current active page"}
+{"level":30,"time":"2021-10-11T14:37:08.745Z","pid":3580,"hostname":"RogerioLopes","msg":"Changed active page"}
+{"level":30,"time":"2021-10-11T14:37:09.269Z","pid":3580,"hostname":"RogerioLopes","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-10-11T14:37:09.282Z","pid":3580,"hostname":"RogerioLopes","msg":"Changed active context"}
+{"level":30,"time":"2021-10-11T14:37:09.511Z","pid":3580,"hostname":"RogerioLopes","msg":"Video path: undefined"}
+{"level":30,"time":"2021-10-11T14:37:09.511Z","pid":3580,"hostname":"RogerioLopes","msg":"Changed active page"}
+{"level":30,"time":"2021-10-11T14:37:10.349Z","pid":3580,"hostname":"RogerioLopes","msg":"Page|Frame|Element resolved elementSelector: css=.navbar-item >> text=\"Olá Papito, seu saldo é R$ 1000\""}
+{"level":30,"time":"2021-10-11T14:37:10.400Z","pid":3580,"hostname":"RogerioLopes","msg":"Page|Frame|Element resolved elementSelector: text=Fazer PIX"}
+{"level":30,"time":"2021-10-11T14:37:10.571Z","pid":3580,"hostname":"RogerioLopes","msg":"Page|Frame|Element resolved elementSelector: css=button >> text=Enviar PIX"}
+{"level":30,"time":"2021-10-11T14:37:10.594Z","pid":3580,"hostname":"RogerioLopes","msg":"Page|Frame|Element resolved elementSelector: css=.field select"}
+{"level":30,"time":"2021-10-11T14:37:10.631Z","pid":3580,"hostname":"RogerioLopes","msg":"Page|Frame|Element resolved elementSelector: id=chave-pix"}
+{"level":30,"time":"2021-10-11T14:37:10.678Z","pid":3580,"hostname":"RogerioLopes","msg":"Page|Frame|Element resolved elementSelector: id=valor"}
+{"level":30,"time":"2021-10-11T14:37:10.711Z","pid":3580,"hostname":"RogerioLopes","msg":"Page|Frame|Element resolved elementSelector: css=button >> text=Enviar PIX"}
+{"level":30,"time":"2021-10-11T14:37:10.847Z","pid":3580,"hostname":"RogerioLopes","msg":"Page|Frame|Element resolved elementSelector: xpath=//a[contains(text(), 'saldo')]"}
+{"level":30,"time":"2021-10-11T14:37:10.868Z","pid":3580,"hostname":"RogerioLopes","msg":"Strict mode is: true"}
+{"level":30,"time":"2021-10-11T14:37:10.897Z","pid":3580,"hostname":"RogerioLopes","msg":"Retrieved text for element xpath=//a[contains(text(), 'saldo')] containing Olá Papito, seu saldo é R$ 900"}
+{"level":30,"time":"2021-10-11T14:37:10.902Z","pid":3580,"hostname":"RogerioLopes","msg":"Page|Frame|Element resolved elementSelector: xpath=//td[contains(text(), \"Envio de PIX\")]/.."}
+{"level":30,"time":"2021-10-11T14:37:10.918Z","pid":3580,"hostname":"RogerioLopes","msg":"Strict mode is: true"}
+{"level":30,"time":"2021-10-11T14:37:10.937Z","pid":3580,"hostname":"RogerioLopes","msg":"Retrieved text for element xpath=//td[contains(text(), \"Envio de PIX\")]/.. containing 214-923-0077\tEnvio de PIX\tNeon - PIX para 02478427109\t11/10/2021\tR$ -100 "}
+{"level":30,"time":"2021-10-11T14:37:10.941Z","pid":3580,"hostname":"RogerioLopes","msg":"Strict mode is: true"}
+{"level":30,"time":"2021-10-11T14:37:10.959Z","pid":3580,"hostname":"RogerioLopes","msg":"Retrieved text for element xpath=//td[contains(text(), \"Envio de PIX\")]/.. containing 214-923-0077\tEnvio de PIX\tNeon - PIX para 02478427109\t11/10/2021\tR$ -100 "}
+{"level":30,"time":"2021-10-11T14:37:11.167Z","pid":3580,"hostname":"RogerioLopes","msg":"Changed active context"}
+{"level":30,"time":"2021-10-11T14:37:11.167Z","pid":3580,"hostname":"RogerioLopes","msg":"Changing current active page"}
+{"level":30,"time":"2021-10-11T14:37:11.167Z","pid":3580,"hostname":"RogerioLopes","msg":"Changed active page"}
+{"level":30,"time":"2021-10-11T14:37:11.183Z","pid":3580,"hostname":"RogerioLopes","msg":"Changed active context"}
+{"level":30,"time":"2021-10-11T14:37:11.184Z","pid":3580,"hostname":"RogerioLopes","msg":"Changing current active page"}
+{"level":30,"time":"2021-10-11T14:37:11.184Z","pid":3580,"hostname":"RogerioLopes","msg":"Changed active page"}
+{"level":30,"time":"2021-10-11T14:37:11.698Z","pid":3580,"hostname":"RogerioLopes","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-10-11T14:37:11.710Z","pid":3580,"hostname":"RogerioLopes","msg":"Changed active context"}
+{"level":30,"time":"2021-10-11T14:37:11.920Z","pid":3580,"hostname":"RogerioLopes","msg":"Video path: undefined"}
+{"level":30,"time":"2021-10-11T14:37:11.920Z","pid":3580,"hostname":"RogerioLopes","msg":"Changed active page"}
+{"level":30,"time":"2021-10-11T14:37:12.723Z","pid":3580,"hostname":"RogerioLopes","msg":"Page|Frame|Element resolved elementSelector: css=.navbar-item >> text=\"Olá Papito, seu saldo é R$ 1000\""}
+{"level":30,"time":"2021-10-11T14:37:12.762Z","pid":3580,"hostname":"RogerioLopes","msg":"Page|Frame|Element resolved elementSelector: text=Fazer PIX"}
+{"level":30,"time":"2021-10-11T14:37:12.898Z","pid":3580,"hostname":"RogerioLopes","msg":"Page|Frame|Element resolved elementSelector: css=button >> text=Enviar PIX"}
+{"level":30,"time":"2021-10-11T14:37:12.919Z","pid":3580,"hostname":"RogerioLopes","msg":"Page|Frame|Element resolved elementSelector: css=.field select"}
+{"level":30,"time":"2021-10-11T14:37:12.961Z","pid":3580,"hostname":"RogerioLopes","msg":"Page|Frame|Element resolved elementSelector: id=chave-pix"}
+{"level":30,"time":"2021-10-11T14:37:13.003Z","pid":3580,"hostname":"RogerioLopes","msg":"Page|Frame|Element resolved elementSelector: id=valor"}
+{"level":30,"time":"2021-10-11T14:37:13.050Z","pid":3580,"hostname":"RogerioLopes","msg":"Page|Frame|Element resolved elementSelector: css=button >> text=Enviar PIX"}
+{"level":30,"time":"2021-10-11T14:37:13.194Z","pid":3580,"hostname":"RogerioLopes","msg":"Page|Frame|Element resolved elementSelector: css=.media-content"}
+{"level":30,"time":"2021-10-11T14:37:13.212Z","pid":3580,"hostname":"RogerioLopes","msg":"Strict mode is: true"}
+{"level":30,"time":"2021-10-11T14:37:13.231Z","pid":3580,"hostname":"RogerioLopes","msg":"Retrieved text for element css=.media-content containing Oops. Transferir ZERO é osso hein..."}
+{"level":30,"time":"2021-10-11T14:37:13.458Z","pid":3580,"hostname":"RogerioLopes","msg":"Changed active context"}
+{"level":30,"time":"2021-10-11T14:37:13.459Z","pid":3580,"hostname":"RogerioLopes","msg":"Changing current active page"}
+{"level":30,"time":"2021-10-11T14:37:13.459Z","pid":3580,"hostname":"RogerioLopes","msg":"Changed active page"}
+{"level":30,"time":"2021-10-11T14:37:13.471Z","pid":3580,"hostname":"RogerioLopes","msg":"Changed active context"}
+{"level":30,"time":"2021-10-11T14:37:13.471Z","pid":3580,"hostname":"RogerioLopes","msg":"Changing current active page"}
+{"level":30,"time":"2021-10-11T14:37:13.471Z","pid":3580,"hostname":"RogerioLopes","msg":"Changed active page"}
+{"level":30,"time":"2021-10-11T14:37:13.960Z","pid":3580,"hostname":"RogerioLopes","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-10-11T14:37:13.979Z","pid":3580,"hostname":"RogerioLopes","msg":"Changed active context"}
+{"level":30,"time":"2021-10-11T14:37:14.188Z","pid":3580,"hostname":"RogerioLopes","msg":"Video path: undefined"}
+{"level":30,"time":"2021-10-11T14:37:14.188Z","pid":3580,"hostname":"RogerioLopes","msg":"Changed active page"}
+{"level":30,"time":"2021-10-11T14:37:15.068Z","pid":3580,"hostname":"RogerioLopes","msg":"Page|Frame|Element resolved elementSelector: css=.navbar-item >> text=\"Olá Papito, seu saldo é R$ 1000\""}
+{"level":30,"time":"2021-10-11T14:37:15.110Z","pid":3580,"hostname":"RogerioLopes","msg":"Page|Frame|Element resolved elementSelector: text=Fazer PIX"}
+{"level":30,"time":"2021-10-11T14:37:15.270Z","pid":3580,"hostname":"RogerioLopes","msg":"Page|Frame|Element resolved elementSelector: css=button >> text=Enviar PIX"}
+{"level":30,"time":"2021-10-11T14:37:15.290Z","pid":3580,"hostname":"RogerioLopes","msg":"Page|Frame|Element resolved elementSelector: css=.field select"}
+{"level":30,"time":"2021-10-11T14:37:15.330Z","pid":3580,"hostname":"RogerioLopes","msg":"Page|Frame|Element resolved elementSelector: id=chave-pix"}
+{"level":30,"time":"2021-10-11T14:37:15.380Z","pid":3580,"hostname":"RogerioLopes","msg":"Page|Frame|Element resolved elementSelector: id=valor"}
+{"level":30,"time":"2021-10-11T14:37:15.422Z","pid":3580,"hostname":"RogerioLopes","msg":"Page|Frame|Element resolved elementSelector: css=button >> text=Enviar PIX"}
+{"level":30,"time":"2021-10-11T14:37:15.566Z","pid":3580,"hostname":"RogerioLopes","msg":"Page|Frame|Element resolved elementSelector: css=.media-content"}
+{"level":30,"time":"2021-10-11T14:37:15.592Z","pid":3580,"hostname":"RogerioLopes","msg":"Strict mode is: true"}
+{"level":30,"time":"2021-10-11T14:37:15.616Z","pid":3580,"hostname":"RogerioLopes","msg":"Retrieved text for element css=.media-content containing Oops. Transferir ZERO é osso hein..."}
+{"level":30,"time":"2021-10-11T14:37:15.634Z","pid":3580,"hostname":"RogerioLopes","msg":"Strict mode is: true"}
+{"level":30,"time":"2021-10-11T14:37:15.654Z","pid":3580,"hostname":"RogerioLopes","msg":"Retrieved text for element css=.media-content containing Oops. Transferir ZERO é osso hein..."}
+{"level":30,"time":"2021-10-11T14:37:15.680Z","pid":3580,"hostname":"RogerioLopes","msg":"Strict mode is: true"}
+{"level":30,"time":"2021-10-11T14:37:15.700Z","pid":3580,"hostname":"RogerioLopes","msg":"Retrieved text for element css=.media-content containing Oops. Transferir ZERO é osso hein..."}
+{"level":30,"time":"2021-10-11T14:37:15.726Z","pid":3580,"hostname":"RogerioLopes","msg":"Strict mode is: true"}
+{"level":30,"time":"2021-10-11T14:37:15.751Z","pid":3580,"hostname":"RogerioLopes","msg":"Retrieved text for element css=.media-content containing Oops. Transferir ZERO é osso hein..."}
+{"level":30,"time":"2021-10-11T14:37:15.773Z","pid":3580,"hostname":"RogerioLopes","msg":"Strict mode is: true"}
+{"level":30,"time":"2021-10-11T14:37:15.789Z","pid":3580,"hostname":"RogerioLopes","msg":"Retrieved text for element css=.media-content containing Oops. Transferir ZERO é osso hein..."}
+{"level":30,"time":"2021-10-11T14:37:15.805Z","pid":3580,"hostname":"RogerioLopes","msg":"Strict mode is: true"}
+{"level":30,"time":"2021-10-11T14:37:15.823Z","pid":3580,"hostname":"RogerioLopes","msg":"Retrieved text for element css=.media-content containing Oops. Transferir ZERO é osso hein..."}
+{"level":30,"time":"2021-10-11T14:37:15.836Z","pid":3580,"hostname":"RogerioLopes","msg":"Strict mode is: true"}
+{"level":30,"time":"2021-10-11T14:37:15.854Z","pid":3580,"hostname":"RogerioLopes","msg":"Retrieved text for element css=.media-content containing Oops. Transferir ZERO é osso hein..."}
+{"level":30,"time":"2021-10-11T14:37:15.867Z","pid":3580,"hostname":"RogerioLopes","msg":"Strict mode is: true"}
+{"level":30,"time":"2021-10-11T14:37:15.885Z","pid":3580,"hostname":"RogerioLopes","msg":"Retrieved text for element css=.media-content containing Oops. Transferir ZERO é osso hein..."}
+{"level":30,"time":"2021-10-11T14:37:15.898Z","pid":3580,"hostname":"RogerioLopes","msg":"Strict mode is: true"}
+{"level":30,"time":"2021-10-11T14:37:15.915Z","pid":3580,"hostname":"RogerioLopes","msg":"Retrieved text for element css=.media-content containing Oops. Transferir ZERO é osso hein..."}
+{"level":30,"time":"2021-10-11T14:37:15.930Z","pid":3580,"hostname":"RogerioLopes","msg":"Strict mode is: true"}
+{"level":30,"time":"2021-10-11T14:37:15.946Z","pid":3580,"hostname":"RogerioLopes","msg":"Retrieved text for element css=.media-content containing Oops. Transferir ZERO é osso hein..."}
+{"level":30,"time":"2021-10-11T14:37:15.961Z","pid":3580,"hostname":"RogerioLopes","msg":"Strict mode is: true"}
+{"level":30,"time":"2021-10-11T14:37:15.976Z","pid":3580,"hostname":"RogerioLopes","msg":"Retrieved text for element css=.media-content containing Oops. Transferir ZERO é osso hein..."}
+{"level":30,"time":"2021-10-11T14:37:15.993Z","pid":3580,"hostname":"RogerioLopes","msg":"Strict mode is: true"}
+{"level":30,"time":"2021-10-11T14:37:16.011Z","pid":3580,"hostname":"RogerioLopes","msg":"Retrieved text for element css=.media-content containing Oops. Transferir ZERO é osso hein..."}
+{"level":30,"time":"2021-10-11T14:37:16.025Z","pid":3580,"hostname":"RogerioLopes","msg":"Strict mode is: true"}
+{"level":30,"time":"2021-10-11T14:37:16.041Z","pid":3580,"hostname":"RogerioLopes","msg":"Retrieved text for element css=.media-content containing Oops. Transferir ZERO é osso hein..."}
+{"level":30,"time":"2021-10-11T14:37:16.056Z","pid":3580,"hostname":"RogerioLopes","msg":"Strict mode is: true"}
+{"level":30,"time":"2021-10-11T14:37:16.076Z","pid":3580,"hostname":"RogerioLopes","msg":"Retrieved text for element css=.media-content containing Oops. Transferir ZERO é osso hein..."}
+{"level":30,"time":"2021-10-11T14:37:16.088Z","pid":3580,"hostname":"RogerioLopes","msg":"Strict mode is: true"}
+{"level":30,"time":"2021-10-11T14:37:16.107Z","pid":3580,"hostname":"RogerioLopes","msg":"Retrieved text for element css=.media-content containing Oops. Transferir ZERO é osso hein..."}
+{"level":30,"time":"2021-10-11T14:37:16.135Z","pid":3580,"hostname":"RogerioLopes","msg":"Strict mode is: true"}
+{"level":30,"time":"2021-10-11T14:37:16.152Z","pid":3580,"hostname":"RogerioLopes","msg":"Retrieved text for element css=.media-content containing Oops. Transferir ZERO é osso hein..."}
+{"level":30,"time":"2021-10-11T14:37:16.166Z","pid":3580,"hostname":"RogerioLopes","msg":"Strict mode is: true"}
+{"level":30,"time":"2021-10-11T14:37:16.184Z","pid":3580,"hostname":"RogerioLopes","msg":"Retrieved text for element css=.media-content containing Oops. Transferir ZERO é osso hein..."}
+{"level":30,"time":"2021-10-11T14:37:16.198Z","pid":3580,"hostname":"RogerioLopes","msg":"Strict mode is: true"}
+{"level":30,"time":"2021-10-11T14:37:16.215Z","pid":3580,"hostname":"RogerioLopes","msg":"Retrieved text for element css=.media-content containing Oops. Transferir ZERO é osso hein..."}
+{"level":30,"time":"2021-10-11T14:37:16.229Z","pid":3580,"hostname":"RogerioLopes","msg":"Strict mode is: true"}
+{"level":30,"time":"2021-10-11T14:37:16.248Z","pid":3580,"hostname":"RogerioLopes","msg":"Retrieved text for element css=.media-content containing Oops. Transferir ZERO é osso hein..."}
+{"level":30,"time":"2021-10-11T14:37:16.260Z","pid":3580,"hostname":"RogerioLopes","msg":"Strict mode is: true"}
+{"level":30,"time":"2021-10-11T14:37:16.278Z","pid":3580,"hostname":"RogerioLopes","msg":"Retrieved text for element css=.media-content containing Oops. Transferir ZERO é osso hein..."}
+{"level":30,"time":"2021-10-11T14:37:16.292Z","pid":3580,"hostname":"RogerioLopes","msg":"Strict mode is: true"}
+{"level":30,"time":"2021-10-11T14:37:16.309Z","pid":3580,"hostname":"RogerioLopes","msg":"Retrieved text for element css=.media-content containing Oops. Transferir ZERO é osso hein..."}
+{"level":30,"time":"2021-10-11T14:37:16.324Z","pid":3580,"hostname":"RogerioLopes","msg":"Strict mode is: true"}
+{"level":30,"time":"2021-10-11T14:37:16.343Z","pid":3580,"hostname":"RogerioLopes","msg":"Retrieved text for element css=.media-content containing Oops. Transferir ZERO é osso hein..."}
+{"level":30,"time":"2021-10-11T14:37:16.371Z","pid":3580,"hostname":"RogerioLopes","msg":"Strict mode is: true"}
+{"level":30,"time":"2021-10-11T14:37:16.388Z","pid":3580,"hostname":"RogerioLopes","msg":"Retrieved text for element css=.media-content containing Oops. Transferir ZERO é osso hein..."}
+{"level":30,"time":"2021-10-11T14:37:16.403Z","pid":3580,"hostname":"RogerioLopes","msg":"Strict mode is: true"}
+{"level":30,"time":"2021-10-11T14:37:16.420Z","pid":3580,"hostname":"RogerioLopes","msg":"Retrieved text for element css=.media-content containing Oops. Transferir ZERO é osso hein..."}
+{"level":30,"time":"2021-10-11T14:37:16.435Z","pid":3580,"hostname":"RogerioLopes","msg":"Strict mode is: true"}
+{"level":30,"time":"2021-10-11T14:37:16.453Z","pid":3580,"hostname":"RogerioLopes","msg":"Retrieved text for element css=.media-content containing Oops. Transferir ZERO é osso hein..."}
+{"level":30,"time":"2021-10-11T14:37:16.466Z","pid":3580,"hostname":"RogerioLopes","msg":"Strict mode is: true"}
+{"level":30,"time":"2021-10-11T14:37:16.487Z","pid":3580,"hostname":"RogerioLopes","msg":"Retrieved text for element css=.media-content containing Oops. Transferir ZERO é osso hein..."}
+{"level":30,"time":"2021-10-11T14:37:16.512Z","pid":3580,"hostname":"RogerioLopes","msg":"Strict mode is: true"}
+{"level":30,"time":"2021-10-11T14:37:16.529Z","pid":3580,"hostname":"RogerioLopes","msg":"Retrieved text for element css=.media-content containing Oops. Transferir ZERO é osso hein..."}
+{"level":30,"time":"2021-10-11T14:37:16.542Z","pid":3580,"hostname":"RogerioLopes","msg":"Strict mode is: true"}
+{"level":30,"time":"2021-10-11T14:37:16.561Z","pid":3580,"hostname":"RogerioLopes","msg":"Retrieved text for element css=.media-content containing Oops. Transferir ZERO é osso hein..."}
+{"level":30,"time":"2021-10-11T14:37:16.574Z","pid":3580,"hostname":"RogerioLopes","msg":"Strict mode is: true"}
+{"level":30,"time":"2021-10-11T14:37:16.590Z","pid":3580,"hostname":"RogerioLopes","msg":"Retrieved text for element css=.media-content containing Oops. Transferir ZERO é osso hein..."}
+{"level":30,"time":"2021-10-11T14:37:16.606Z","pid":3580,"hostname":"RogerioLopes","msg":"Strict mode is: true"}
+{"level":30,"time":"2021-10-11T14:37:16.623Z","pid":3580,"hostname":"RogerioLopes","msg":"Retrieved text for element css=.media-content containing Oops. Transferir ZERO é osso hein..."}
+{"level":30,"time":"2021-10-11T14:37:17.002Z","pid":3580,"hostname":"RogerioLopes","msg":"Changed active context"}
+{"level":30,"time":"2021-10-11T14:37:17.002Z","pid":3580,"hostname":"RogerioLopes","msg":"Changing current active page"}
+{"level":30,"time":"2021-10-11T14:37:17.002Z","pid":3580,"hostname":"RogerioLopes","msg":"Changed active page"}
+{"level":30,"time":"2021-10-11T14:37:17.017Z","pid":3580,"hostname":"RogerioLopes","msg":"Changed active context"}
+{"level":30,"time":"2021-10-11T14:37:17.018Z","pid":3580,"hostname":"RogerioLopes","msg":"Changing current active page"}
+{"level":30,"time":"2021-10-11T14:37:17.018Z","pid":3580,"hostname":"RogerioLopes","msg":"Changed active page"}
